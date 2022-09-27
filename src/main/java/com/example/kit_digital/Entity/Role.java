@@ -1,6 +1,7 @@
-package com.example.jwrauthen.Domain;
+package com.example.kit_digital.Entity;
 
 
+import com.example.kit_digital.Enum.RoleE;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -20,5 +21,4 @@ public class Role {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
-
 }

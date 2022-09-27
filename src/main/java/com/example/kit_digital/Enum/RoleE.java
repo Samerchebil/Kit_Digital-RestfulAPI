@@ -1,6 +1,6 @@
 package com.example.kit_digital.Enum;
 
-public enum Role {
+public enum RoleE {
     ROLE_ADMIN,
     ROLE_USER
 }

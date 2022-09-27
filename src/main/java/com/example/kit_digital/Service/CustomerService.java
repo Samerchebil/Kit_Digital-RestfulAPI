@@ -1,15 +1,19 @@
-package com.example.jwrauthen.Service;
+package com.example.kit_digital.Service;
 
-import com.example.jwrauthen.Domain.Role;
-import com.example.jwrauthen.Domain.UserApp;
-//import org.springframework.security.core.userdetails.User;
+
+import com.example.kit_digital.Dto.CustomerDto;
+import com.example.kit_digital.Entity.Customer;
+import com.example.kit_digital.Entity.Role;
 
 import java.util.List;
 
-public interface    UserService {
-    UserApp saveUser(UserApp user);
+public interface CustomerService {
+    void saveCustomer(Customer customer);
+    CustomerDto getCustomer(String username);
+    List<CustomerDto>getCustomers();
     Role saveRole(Role role);
-    void addRoleToUser(String username,String roleName);
-    UserApp getUser(String username);
-    List<UserApp>getUsers();
+    List<Role> getAllRoles();
+
+    void addRoleToCustomer(String username,String customerName);
+
 }

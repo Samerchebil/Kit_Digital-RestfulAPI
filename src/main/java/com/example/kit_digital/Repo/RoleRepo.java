@@ -1,6 +1,6 @@
-package com.example.jwrauthen.Repo;
+package com.example.kit_digital.Repo;
 
-import com.example.jwrauthen.Domain.Role;
+import com.example.kit_digital.Entity.Role;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
